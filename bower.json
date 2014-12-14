@@ -1,0 +1,21 @@
+{
+  "name": "luccachat",
+  "version": "0.0.0",
+  "authors": [
+    "Quentin Calvez <quentin.calvez@quentez.com>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ember": "~1.9.0"
+  }
+}
