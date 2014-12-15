@@ -6,6 +6,7 @@ body {
 	padding-bottom: 40px;
 }
 
+/* User column style. */
 .column {
 	padding: 10px;
 }
@@ -16,16 +17,17 @@ body {
 	border-left: 5px solid #C0C0C0;
 }
 
+/* Message style. */
 .conversation .row {
 	margin: 0;
 	background-color: #F4F4F4;
 }
 
 .conversation .sender {
+	padding: 0;
 	color: #E79821;
 	text-align: right;
 	font-weight: bold;
-	padding: 0;
 }
 
 .conversation .sender div {
@@ -42,6 +44,7 @@ body {
 	padding: 5px 10px;
 }
 
+/* Differentiated style for our user's messages. */
 .conversation .from-me .sender {
 	color: #494949;
 }
