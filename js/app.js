@@ -4,11 +4,9 @@ window.Chat = Ember.Application.create();
 // Create the data model.
 var users = [
 	{
-		id: 0,
 		name: "User 1"
 	},
 	{
-		id: 1,
 		name: "User 2"
 	}
 ];
