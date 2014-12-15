@@ -1,0 +1,48 @@
+body {
+	padding-top: 50px;
+}
+
+.content {
+	padding-bottom: 40px;
+}
+
+.column {
+	padding: 10px;
+}
+
+.conversation {
+	height: 300px;
+	overflow-y: scroll;
+	border-left: 5px solid #C0C0C0;
+}
+
+.conversation .row {
+	margin: 0;
+}
+
+.conversation .sender {
+	background-color: #F0F0F0;
+	color: #404040;
+	text-align: right;
+	padding: 0;
+}
+
+.conversation .sender div {
+	padding: 5px 10px;
+}
+
+.conversation .message {
+	padding: 0;
+}
+
+.conversation .message div {
+	padding: 5px 10px;
+}
+
+.conversation .from-me .sender {
+	font-style: italic;
+}
+
+.conversation .from-me .message {
+	background-color: #E4F2FB;
+}

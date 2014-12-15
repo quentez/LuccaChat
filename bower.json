@@ -16,6 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "ember": "~1.9.0"
+    "ember": "~1.9.0",
+    "bootstrap": "~3.3.1"
   }
 }
