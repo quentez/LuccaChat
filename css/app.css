@@ -18,12 +18,13 @@ body {
 
 .conversation .row {
 	margin: 0;
+	background-color: #F4F4F4;
 }
 
 .conversation .sender {
-	background-color: #F0F0F0;
-	color: #404040;
+	color: #E79821;
 	text-align: right;
+	font-weight: bold;
 	padding: 0;
 }
 
@@ -33,6 +34,8 @@ body {
 
 .conversation .message {
 	padding: 0;
+	background-color: white;
+	word-wrap: break-word;
 }
 
 .conversation .message div {
@@ -40,7 +43,7 @@ body {
 }
 
 .conversation .from-me .sender {
-	font-style: italic;
+	color: #494949;
 }
 
 .conversation .from-me .message {

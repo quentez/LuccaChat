@@ -26,6 +26,7 @@
 
 	    	<div class="row">
 
+	    		{{! Render each of our users as a column. }}
 	    		{{#each user in controller}}
 
 					<div class="col-md-6">
@@ -36,11 +37,13 @@
 
 							<h3>Conversation</h3>
 
-							<div class="conversation">
+							<div class="conversation scroll-container">
 
+								{{! Render the messages collection for this user. }}
 								{{#each message in user.messages itemController="message"}}
 
-									<div {{bind-attr class=":row message.fromMe:from-me:not-from-me"}}>
+									<div {{bind-attr class=":row :scroll-item message.fromMe:from-me:not-from-me"}}>
+										{{scroll-bottom}}
 										<div class="col-xs-4 sender"><div>{{message.user.name}}</div></div>
 										<div class="col-xs-8 message"><div>{{message.text}}</div></div>
 									</div>
@@ -49,6 +52,7 @@
 
 							<h3>New message</h3>
 
+							{{! This form binds to properties and actions on the UserController. }}
 							<div class="row">
 								<div class="col-xs-10">
 									{{input type="text" class="form-control" placeholder="Message" value=user.newMessage action="newMessage"}}
@@ -65,7 +69,7 @@
 	</script>
 
 
-    <!-- Bootstrap core JavaScript. -->
+    <!-- Dependencies and App. -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/handlebars/handlebars.js"></script>
     <script src="bower_components/ember/ember.js"></script>
